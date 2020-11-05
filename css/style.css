@@ -796,17 +796,12 @@ p {
 		width: 100%;
 	}
 
-	#videoContainer {
-		height: 17.5em;
-	}
 
 	
 }
 
 @media(max-width:414px) {
-	#videoContainer {
-		height: 15.5em;
-	}
+
 
 	#videoContainer #controls .volume .icon {
 		margin-right: 3px;
@@ -893,10 +888,8 @@ p {
 		padding: 5px 0;
 	}
 	#videoContainer{
-		margin-right: 0;
 		width: 67%;
 		height: 55vh !important;
-		margin-bottom: 0;
 		margin: 0;
 	}
 
@@ -939,7 +932,12 @@ p {
 }
 @media screen and (max-height: 600px) and (orientation: landscape){
 	body{
-		overflow: scroll
+		overflow-y: scroll;
+		display: flex;
+		flex-direction: column;
+	}
+	.wthree-row {
+		flex-direction: column;
 	}
 	.download-container{
 		width: 300px;
@@ -947,6 +945,7 @@ p {
 	#videoContainer{
 		width: 280px;
 		height: 400px !important;
+		margin: 0;
 	}
 	.copy-agileits{
 		position: relative;
@@ -957,12 +956,38 @@ p {
 	}
 	.agileits-main{
 		height: max-content;
+		padding: 5px 0;
 	}
 	.download-mobile-container{
 		margin-top: 0;
 	}
 	.wthree-row{
-		margin-top: 0;
+		flex-direction: column;
+		margin: 0;
+	}
+	.desktop-only {
+		display: none;
+	}
+	.mobile-only {
+		display: flex;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	#videoContainer #controls .volume .icon {
+		margin-right: 3px;
+	}
+	#videoContainer #controls .ProgressContainer .timer {
+		margin: 0 5px;
+		font-size: 11px;
+		letter-spacing: 0px;
+	}
+	.space {
+		width: 25px;
+	}
+	.download-mobile-container img {
+		height: 45px;
+		object-fit: contain;
 	}
 }
 /*-- //responsive-design --*/
