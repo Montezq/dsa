@@ -938,6 +938,7 @@ p {
 	}
 	.wthree-row {
 		flex-direction: column;
+		justify-content: flex-start;
 	}
 	.download-container{
 		width: 300px;
@@ -957,6 +958,8 @@ p {
 	.agileits-main{
 		height: max-content;
 		padding: 5px 0;
+		align-items: flex-start;
+		justify-content: flex-start;
 	}
 	.download-mobile-container{
 		margin-top: 0;
