@@ -935,6 +935,7 @@ p {
 		overflow-y: scroll;
 		display: flex;
 		flex-direction: column;
+		height: max-content;
 	}
 	.wthree-row {
 		flex-direction: column;
