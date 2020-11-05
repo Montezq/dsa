@@ -930,7 +930,7 @@ p {
 		height: 32px;
 	}
 }
-@media screen and (max-height: 600px) and (orientation: landscape){
+@media screen and (max-height: 600px) and (max-width: 2560px) and (orientation: landscape){
 	body{
 		overflow-y: scroll;
 		display: flex;
@@ -988,6 +988,10 @@ p {
 	.download-mobile-container img {
 		height: 45px;
 		object-fit: contain;
+	}
+	.download__logo-info {
+    margin-top: 20px;
+    margin-bottom: 10px;
 	}
 }
 /*-- //responsive-design --*/
