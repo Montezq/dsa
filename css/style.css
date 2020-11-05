@@ -939,6 +939,8 @@ p {
 	.wthree-row {
 		flex-direction: column;
 		justify-content: flex-start;
+		height: max-content;
+		margin: 0;
 	}
 	.download-container{
 		width: 300px;
@@ -963,10 +965,6 @@ p {
 	}
 	.download-mobile-container{
 		margin-top: 0;
-	}
-	.wthree-row{
-		flex-direction: column;
-		margin: 0;
 	}
 	.desktop-only {
 		display: none;
